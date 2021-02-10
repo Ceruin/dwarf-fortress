@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <title>TEST</title>
    <script>
-     function test() {
-      console.log("TEST"); 
+     var recur = -1;
+     
+     function test(num = 0) {
+      recur += num;
+      console.log("TEST" + recur); 
+      test(recur);
      }
      
     </script>
